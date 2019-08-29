@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { tech, about } from '../constant/data';
 import { Typography, Grid, Avatar, Paper, Button } from '@material-ui/core';
 import backgroundpic from '../static/bg.jpg';
-import profilepic from '../static/fred.png';
+import profilepic from '../static/code.jpg';
 import { Link } from 'react-router-dom';
 import Footer from './footer';
 //import  Navbar from './navbar'

@@ -51,7 +51,8 @@ export const project = [
   {
     title: 'AskIt',
     description: 'Ask it is a social platform for discussing social issues ',
-    link: 'https://adoring-euler-aec524.netlify.com/',
+    link: 'https://github.com/achifred/ask',
+    site: '',
 
     picture: ''
   },
@@ -59,6 +60,7 @@ export const project = [
     title: 'Bakery',
     description: ' A landing page built with HTML5 & CSS3 ',
     link: 'https://github.com/achifred/bakery',
+    site: 'https://bake.netlify.com/',
     picture: bakery
   },
 

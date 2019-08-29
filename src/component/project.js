@@ -26,7 +26,10 @@ class Project extends Component {
                       {item.description}
                     </Typography>
                     <Typography style={styles.txt}>
-                      <a href={item.link}>{item.link}</a>
+                      <a href={item.link}>View Code</a>
+                    </Typography>
+                    <Typography style={styles.txt}>
+                      <a href={item.site}>{item.site} </a>
                     </Typography>
                   </Grid>
                 </div>

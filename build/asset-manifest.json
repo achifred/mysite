@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.js": "/static/js/main.744bdc0b.chunk.js",
-    "main.js.map": "/static/js/main.744bdc0b.chunk.js.map",
+    "main.js": "/static/js/main.eaee472b.chunk.js",
+    "main.js.map": "/static/js/main.eaee472b.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.f063c7e4.js",
     "runtime~main.js.map": "/static/js/runtime~main.f063c7e4.js.map",
     "static/js/2.526d0293.chunk.js": "/static/js/2.526d0293.chunk.js",
     "static/js/2.526d0293.chunk.js.map": "/static/js/2.526d0293.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.048414e31cd33a2c4700de74bf742684.js": "/precache-manifest.048414e31cd33a2c4700de74bf742684.js",
+    "precache-manifest.0107db4ac5e1f680035a8afafd136604.js": "/precache-manifest.0107db4ac5e1f680035a8afafd136604.js",
     "service-worker.js": "/service-worker.js",
     "static/media/baked-berry-cake-1055272.jpg": "/static/media/baked-berry-cake-1055272.99d56e92.jpg",
     "static/media/bg.jpg": "/static/media/bg.4b1d7c4c.jpg",
-    "static/media/fred.png": "/static/media/fred.430b83ca.png"
+    "static/media/code.jpg": "/static/media/code.355dd883.jpg"
   }
 }

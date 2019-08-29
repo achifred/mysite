@@ -2,6 +2,10 @@
   "name": "mysite",
   "version": "0.1.0",
   "private": true,
+  "engine": {
+    "node": "10.16.0",
+    "npm": "6.10.2"
+  },
   "dependencies": {
     "@material-ui/core": "^4.3.3",
     "@material-ui/icons": "^4.2.1",

@@ -39,7 +39,7 @@ export class Home extends Component {
                     {item.title}
                   </Typography>
                   <Typography key={item} style={styles.descText}>
-                    {item.description}
+                    {item.slug}
                   </Typography>
                 </div>
               ))}

@@ -45,7 +45,7 @@ export class Home extends Component {
               ))}
               <Grid container style={{ justifyContent: 'center' }}>
                 <Button variant="contained" style={styles.resumeButton}>
-                  <Link style={{ textDecoration: 'none' }} to="/resume">
+                  <Link style={styles.link} to="/resume">
                     {' '}
                     View Resume
                   </Link>
@@ -53,7 +53,7 @@ export class Home extends Component {
               </Grid>
               <Grid container style={{ justifyContent: 'center' }}>
                 <Button variant="contained" style={styles.resumeButton}>
-                  <Link style={{ textDecoration: 'none' }} to="/project">
+                  <Link style={styles.link} to="/project">
                     {' '}
                     Project
                   </Link>
@@ -61,7 +61,7 @@ export class Home extends Component {
               </Grid>
               <Grid container style={{ justifyContent: 'center' }}>
                 <Button variant="contained" style={styles.resumeButton}>
-                  <Link style={{ textDecoration: 'none' }} to="/skill">
+                  <Link style={styles.link} to="/skill">
                     {' '}
                     Skills
                   </Link>
@@ -119,6 +119,7 @@ const styles = {
   resumeButton: {
     backgroundColor: '#2398AB',
     marginTop: 20
-  }
+  },
+  link: { textDecoration: 'none', color: 'white' }
 };
 export default Home;

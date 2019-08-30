@@ -34,7 +34,7 @@ export const tech = [
 export const about = [
   {
     title: ' Fred Achi',
-    slug: 'I am a ',
+    slug: 'I am web Developer. I develop websites and web applications',
     description:
       ' I am web Developer living in Ghana. I develop websites, web applications  and mobile application. I believe nothing is impossible to achieve if you put in your all '
   }

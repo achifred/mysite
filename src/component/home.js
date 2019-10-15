@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { tech, about } from '../constant/data';
-import { Typography, Grid, Avatar, Paper, Button } from '@material-ui/core';
+import { Typography, Grid, Avatar, Paper } from '@material-ui/core';
 import backgroundpic from '../static/bg.jpg';
 import profilepic from '../static/code.jpg';
-import { Link } from 'react-router-dom';
+
 import Footer from './footer';
+import { Href } from './href';
 //import  Navbar from './navbar'
 
 export class Home extends Component {
@@ -43,30 +44,9 @@ export class Home extends Component {
                   </Typography>
                 </div>
               ))}
-              <Grid container style={{ justifyContent: 'center' }}>
-                <Button variant="contained" style={styles.resumeButton}>
-                  <Link style={styles.link} to="/resume">
-                    {' '}
-                    View Resume
-                  </Link>
-                </Button>
-              </Grid>
-              <Grid container style={{ justifyContent: 'center' }}>
-                <Button variant="contained" style={styles.resumeButton}>
-                  <Link style={styles.link} to="/project">
-                    {' '}
-                    Project
-                  </Link>
-                </Button>
-              </Grid>
-              <Grid container style={{ justifyContent: 'center' }}>
-                <Button variant="contained" style={styles.resumeButton}>
-                  <Link style={styles.link} to="/skill">
-                    {' '}
-                    Skills
-                  </Link>
-                </Button>
-              </Grid>
+              <Href path="/resume" name="View Resume" />
+              <Href path="/project" name="View Project" />
+              <Href path="/skill" name="View skill" />
             </Paper>
           </Grid>
         </Grid>

@@ -1,19 +1,15 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a4aff3bbf142d65f82f868933e70ef9a",
+    "revision": "62790752dfb4129c5d87d8bcfaefbf27",
     "url": "/index.html"
   },
   {
-    "revision": "c6ccc95c68fb6abb534a",
-    "url": "/static/css/main.16ea2fb4.chunk.css"
+    "revision": "abad96cfd5830b9b2b30",
+    "url": "/static/js/2.73630fb6.chunk.js"
   },
   {
-    "revision": "0be5a06c48ed564f4ab0",
-    "url": "/static/js/2.68d0da69.chunk.js"
-  },
-  {
-    "revision": "c6ccc95c68fb6abb534a",
-    "url": "/static/js/main.a365f1ea.chunk.js"
+    "revision": "8b0139ede2640d5a946b",
+    "url": "/static/js/main.1df21e33.chunk.js"
   },
   {
     "revision": "a4d31eef453c6efe1660",
@@ -28,7 +24,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/baked-berry-cake-1055272.99d56e92.jpg"
   },
   {
-    "revision": "f97e6d7d8b78f5f3b50af582c694d231",
-    "url": "/static/media/codebg.f97e6d7d.jpg"
+    "revision": "355dd88362d2b72ff4f84b3041b516a4",
+    "url": "/static/media/code.355dd883.jpg"
   }
 ]);

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { tech, about } from '../constant/data';
 import { Typography, Grid, Avatar, Paper } from '@material-ui/core';
-import backgroundpic from '../static/bg.jpg';
+import backgroundpic from '../static/artbg.jpg';
 import profilepic from '../static/code.jpg';
 
 import Footer from './footer';
@@ -20,7 +20,7 @@ export class Home extends Component {
   render() {
     const { aboutinfo } = this.state;
     return (
-      <div style={styles.homeContainer}>
+      <Grid container style={styles.homeContainer}>
         <Grid container style={styles.contentContainer}>
           <Grid container style={styles.avatarContainer}>
             <Avatar src={profilepic} style={styles.avatar} />
@@ -34,7 +34,8 @@ export class Home extends Component {
                     style={{
                       fontSize: 35,
                       marginBottom: 10,
-                      fontWeight: 'bold'
+                      fontWeight: 'bold',
+                      color: 'white'
                     }}
                   >
                     {item.title}
@@ -44,15 +45,16 @@ export class Home extends Component {
                   </Typography>
                 </div>
               ))}
-              <Href path="/resume" name="View Resume" />
+
               <Href path="/project" name="View Project" />
               <Href path="/skill" name="View skill" />
+              <Href path="/resume" name="View Resume" />
             </Paper>
           </Grid>
         </Grid>
 
         <Footer />
-      </div>
+      </Grid>
     );
   }
 }
@@ -62,6 +64,7 @@ const styles = {
     justifyContent: 'center',
     textAlign: 'center',
     height: '100vh',
+    width: '100%',
     backgroundImage: `url(${backgroundpic})`,
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
@@ -90,8 +93,8 @@ const styles = {
   descText: {
     fontFamily: 'Times New Roman',
     backgroundColor: 'transparent',
-    color: 'black',
-    fontSize: 20,
+    color: 'white',
+    fontSize: 30,
     textAlign: 'center',
 
     marginTop: 20

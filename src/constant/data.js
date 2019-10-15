@@ -34,7 +34,7 @@ export const tech = [
 export const about = [
   {
     title: ' Fred Achi',
-    slug: 'I am web Developer. I develop websites and web applications',
+    slug: "I'm a full-stack web Developer",
     description:
       ' I am web Developer living in Ghana. I develop websites, web applications  and mobile application. I believe nothing is impossible to achieve if you put in your all '
   }
@@ -75,7 +75,7 @@ export const project = [
 export const skills = [
   {
     title: 'Front-end Development',
-    techstack: 'JavaScript,React.js  HTML5, CSS3 '
+    techstack: 'JavaScript, React.js ,  HTML5, CSS3 '
   },
   {
     title: 'Backend Development',

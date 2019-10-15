@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid, Button } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 
-export function Href(path, name) {
+export function Href({ path, name }) {
   return (
     <Grid container style={{ justifyContent: 'center' }}>
       <Button variant="contained" style={styles.resumeButton}>

@@ -25,7 +25,7 @@ class Skills extends Component {
               <Typography
                 style={{ textAlign: 'center', fontSize: 30, marginTop: 30 }}
               >
-                What I do
+                My Stack
               </Typography>
               {skills.map(item => (
                 <div key={item.title}>
@@ -34,7 +34,8 @@ class Skills extends Component {
                       margin: 15,
                       fontSize: 20,
                       fontFamily: 'Times New Roman',
-                      textAlign: 'center'
+                      textAlign: 'center',
+                      fontWeight: 'bold'
                     }}
                   >
                     {item.title}
@@ -44,7 +45,8 @@ class Skills extends Component {
                       margin: 5,
                       fontSize: 20,
                       fontFamily: 'Times New Roman',
-                      textAlign: 'center'
+                      textAlign: 'center',
+                      fontStyle: 'italic'
                     }}
                   >
                     {item.techstack}

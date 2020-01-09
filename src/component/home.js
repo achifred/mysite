@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { tech, about } from '../constant/data';
-import { Typography, Grid, Avatar, Paper } from '@material-ui/core';
+import { Typography, Grid, Paper } from '@material-ui/core';
 import backgroundpic from '../static/artbg.jpg';
-import profilepic from '../static/code.jpg';
+
 
 import Footer from './footer';
 import { Href } from './href';
@@ -22,9 +22,7 @@ export class Home extends Component {
     return (
       <Grid container style={styles.homeContainer}>
         <Grid container style={styles.contentContainer}>
-          <Grid container style={styles.avatarContainer}>
-            <Avatar src={profilepic} style={styles.avatar} />
-          </Grid>
+         
 
           <Grid container style={styles.descContainer}>
             <Paper style={styles.paper}>
@@ -32,7 +30,7 @@ export class Home extends Component {
                 <div key={item.title}>
                   <Typography
                     style={{
-                      fontSize: 35,
+                      fontSize: 30,
                       marginBottom: 10,
                       fontWeight: 'bold',
                       color: 'white'
@@ -42,6 +40,17 @@ export class Home extends Component {
                   </Typography>
                   <Typography key={item} style={styles.descText}>
                     {item.slug}
+                  </Typography>
+
+                  <Typography
+                    style={{
+                      fontSize: 16,
+                      marginBottom: 10,
+                  
+                      color: 'white'
+                    }}
+                  >
+                    {item.description}
                   </Typography>
                 </div>
               ))}
@@ -82,7 +91,8 @@ const styles = {
     alignItem: 'center'
   },
   descContainer: {
-    justifyContent: 'center'
+    justifyContent: 'center',
+    marginTop: 80
   },
   paper: {
     backgroundColor: 'transparent',
@@ -97,7 +107,7 @@ const styles = {
     fontSize: 30,
     textAlign: 'center',
 
-    marginTop: 20
+    marginTop: 10
   },
   resumeButton: {
     backgroundColor: '#2398AB',

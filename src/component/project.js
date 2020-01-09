@@ -16,7 +16,7 @@ class Project extends Component {
         <div style={styles.root}>
           <Grid container style={styles.grid}>
             {works.map(item => (
-              <Paper style={{ width: 600, margin: 20 }} key={item.title}>
+              <Paper style={{ width: 400, margin: 20 }} key={item.title}>
                 <div>
                   <Grid style={{ justifyContent: 'center' }}>
                     <img src={item.picture} alt="" style={styles.img} />

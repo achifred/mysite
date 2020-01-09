@@ -1,4 +1,7 @@
 import bakery from '../static/baked-berry-cake-1055272.jpg';
+import laughter from '../static/laughter.jpg'
+import folio from '../static/porfolio.jpeg'
+import pot from '../static/pot.jpg'
 export const tech = [
   {
     title: 'javascript'
@@ -33,10 +36,10 @@ export const tech = [
 
 export const about = [
   {
-    title: ' Fred Achi',
-    slug: "I'm a full-stack web Developer",
+    title: 'Hi my name is Fred Achi.',
+    slug: "I build things for the web.",
     description:
-      ' I am web Developer living in Ghana. I develop websites, web applications  and mobile application. I believe nothing is impossible to achieve if you put in your all '
+      ' I am web Developer based in Ghana. I develop websites, web applications  and mobile application. I believe nothing is impossible to achieve if you put in your all. '
   }
 ];
 export const education = [
@@ -49,15 +52,22 @@ export const education = [
 
 export const project = [
   {
-    title: 'AskIt',
-    description: 'Ask it is a social platform for discussing social issues ',
-    link: 'https://github.com/achifred/ask',
-    site: '',
+    title: 'Developer jokeroom',
+    description: 'A live chart web application built with nodejs, express, socket.io and react ',
+    link: 'https://github.com/achifred/jokeroomserver',
+    site: 'https://jokeroom.netlify.com/',
 
-    picture: ''
+    picture: laughter
   },
   {
-    title: 'Bakery',
+    title: 'Sample  Business Landing page',
+    description: 'a sample Business landing page built with php, HTML5, CSS3 and javascript. Use https://amenuve.000webhostapp.com/admin username:admin password:admin to access the dashboard',
+    link: 'https://github.com/achifred/amenuveve',
+    site:'https://amenuve.000webhostapp.com/',
+    picture: pot
+  },
+  {
+    title: 'Sample Html Landing Page',
     description: ' A landing page built with HTML5 & CSS3 ',
     link: 'https://github.com/achifred/bakery',
     site: 'https://bake.netlify.com/',
@@ -68,7 +78,7 @@ export const project = [
     title: 'Portfolio',
     description: 'A personal webiste built with react.js ',
     link: 'https://github.com/achifred/mysite',
-    picture: ''
+    picture: folio
   }
 ];
 

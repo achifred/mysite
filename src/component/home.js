@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { tech, about } from '../constant/data';
 import { Typography, Grid, Paper } from '@material-ui/core';
-import backgroundpic from '../static/artbg.jpg';
+import backgroundpic from '../static/undraw_developer_activity_bv83.svg';
 
 
 import Footer from './footer';

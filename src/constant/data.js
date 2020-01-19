@@ -2,6 +2,7 @@ import bakery from '../static/baked-berry-cake-1055272.jpg';
 import laughter from '../static/laughter.jpg'
 import folio from '../static/porfolio.jpeg'
 import pot from '../static/pot.jpg'
+import code from '../static/code.jpg'
 export const tech = [
   {
     title: 'javascript'
@@ -51,6 +52,14 @@ export const education = [
 ];
 
 export const project = [
+  {
+    title: 'Achif Dev Jobs',
+    description: 'A job board for developers ',
+    link: 'https://github.com/achifred/remotejob and https://github.com/achifred/remotejobclient',
+    site: 'https://achifjobs.netlify.com/',
+
+    picture: code
+  },
   {
     title: 'Developer jokeroom',
     description: 'A live chart web application built with nodejs, express, socket.io and react ',

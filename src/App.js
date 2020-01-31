@@ -10,7 +10,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 class App extends Component {
     initializeAnalytics = () => {
-        ReactGA.initialize("UA-000000-01");
+        ReactGA.initialize("UA-157434639-1");
         ReactGA.pageview(window.location.pathname + window.location.search);
     };
 

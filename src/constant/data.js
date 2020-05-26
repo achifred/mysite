@@ -1,39 +1,37 @@
 import bakery from "../static/baked-berry-cake-1055272.jpg";
-import laughter from "../static/laughter.jpg";
-import folio from "../static/porfolio.jpeg";
 import pot from "../static/pot.jpg";
 import job from "../static/job.svg";
 import cake from "../static/cake.svg";
 export const tech = [
     {
-        title: "javascript"
+        title: "javascript",
     },
     {
-        title: "Nodejs"
+        title: "Nodejs",
     },
     {
-        title: "jQuery"
-    },
-
-    {
-        title: "react js"
-    },
-    {
-        title: "react-native"
-    },
-    {
-        title: "Php "
+        title: "jQuery",
     },
 
     {
-        title: "sql"
+        title: "react js",
     },
     {
-        title: "mysql"
+        title: "react-native",
     },
     {
-        title: "postgresql"
-    }
+        title: "Php ",
+    },
+
+    {
+        title: "sql",
+    },
+    {
+        title: "mysql",
+    },
+    {
+        title: "postgresql",
+    },
 ];
 
 export const about = [
@@ -41,15 +39,15 @@ export const about = [
         title: "Hi my name is Fred Achi.",
         slug: "I build things for the web.",
         description:
-            " I am web Developer based in Ghana. I develop websites, web applications  and mobile application. I believe nothing is impossible to achieve if you put in your all. "
-    }
+            " I am web Developer based in Ghana. I develop websites, web applications. I believe nothing is impossible to achieve if you put in your all. ",
+    },
 ];
 export const education = [
     {
         name: " Kwame Nkrumah University of Science and Technology",
         programe: "BSc Computer Engineering",
-        year: "June, 2018"
-    }
+        year: "June, 2018",
+    },
 ];
 
 export const project = [
@@ -60,7 +58,7 @@ export const project = [
             "https://github.com/achifred/remotejob and https://github.com/achifred/remotejobclient",
         site: "https://achifjobs.netlify.com/",
 
-        picture: job
+        picture: job,
     },
     {
         title: "Rene Cakes",
@@ -68,61 +66,58 @@ export const project = [
         link: "https://github.com/achifred/renecakes",
         site: "https://renecakes.herokuapp.com/",
 
-        picture: cake
+        picture: cake,
     },
-    {
-        title: "Developer jokeroom",
-        description:
-            "A live chart web application built with nodejs, express, socket.io and react ",
-        link: "https://github.com/achifred/jokeroomserver",
-        site: "https://jokeroom.netlify.com/",
 
-        picture: laughter
-    },
     {
-        title: "Sample  Business Landing page",
+        title: "Amenuveve Ceramics",
         description:
-            "a sample Business landing page built with php, HTML5, CSS3 and javascript. Use https://amenuve.000webhostapp.com/admin username:admin password:admin to access the dashboard",
-        link: "https://github.com/achifred/amenuveve",
-        site: "https://amenuve.000webhostapp.com/",
-        picture: pot
+            "Website for Amenuveve Ceramics. Manufacturers of quality ceramic pots",
+
+        site: "https://amenuveveceramics.com/",
+        picture: pot,
     },
     {
         title: "Sample Html Landing Page",
         description: " A landing page built with HTML5 & CSS3 ",
         link: "https://github.com/achifred/bakery",
         site: "https://bake.netlify.com/",
-        picture: bakery
+        picture: bakery,
     },
-
-    {
-        title: "Portfolio",
-        description: "A personal webiste built with react.js ",
-        link: "https://github.com/achifred/mysite",
-        picture: folio
-    }
 ];
 
 export const skills = [
     {
         title: "Front-end Development",
-        techstack: "JavaScript, React.js ,  HTML5, CSS3 "
+        techstack: "JavaScript, React.js ,  HTML5, CSS3 ",
     },
     {
         title: "Backend Development",
-        techstack: " NodeJs, Expressjs, Php, SQL, MySQL, PostgreSQL"
+        techstack: " NodeJs, Expressjs, Php, Laravel, SQL, MySQL, PostgreSQL",
     },
-    {
-        title: "Mobile Application Development ",
-        techstack: "React-native"
-    },
+
     {
         title: "CMS",
-        techstack: "Wordpress"
-    }
+        techstack: "Wordpress",
+    },
 ];
 
 export const workexp = [
+    {
+        company: "Origgin Ltd, Accra",
+        role: "Web Application Developer",
+        date: " Febuary 2020 - Present",
+        project: [
+            {
+                role:
+                    "Develop an advertisement website for advertising center courses using PHP",
+            },
+            {
+                role:
+                    "Developed the frontend for a ledger system. An application to manage center's financial transactions.",
+            },
+        ],
+    },
     {
         company: "Kofi Annan Center of Excellence in ICT, Accra",
         role: "Web Application Developer",
@@ -130,25 +125,25 @@ export const workexp = [
         project: [
             {
                 role:
-                    "Develop an advertisement website for advertising center courses using PHP"
+                    "Develop an advertisement website for advertising center courses using PHP",
             },
             {
                 role:
-                    "Developed the frontend for a ledger system. An application to manage center's financial transactions."
-            }
-        ]
+                    "Developed the frontend for a ledger system. An application to manage center's financial transactions.",
+            },
+        ],
     },
     {
-        company: "Appatech Research Ghana, Kumasi",
+        company: "Appatech Research Ghana",
         role: "Web and Mobile Application Developer(intern)",
         date: " June 2017- August 2017",
         project: [
             {
                 role:
-                    "Design and develop a mobile application version of an existing Enterprise Resource Planning "
-            }
-        ]
-    }
+                    "Design and develop a mobile application version of an existing Enterprise Resource Planning ",
+            },
+        ],
+    },
 ];
 
 export const contact = [
@@ -157,6 +152,6 @@ export const contact = [
 
         country: "Accra, Ghana",
         email: "achifred123@gmail.com",
-        Phone: "+233548480707"
-    }
+        Phone: "+233548480707",
+    },
 ];

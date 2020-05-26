@@ -12,7 +12,7 @@ export class Home extends Component {
         super(props);
         this.state = {
             techinfo: tech,
-            aboutinfo: about
+            aboutinfo: about,
         };
     }
 
@@ -23,14 +23,14 @@ export class Home extends Component {
                 <Grid container style={styles.contentContainer}>
                     <Grid container style={styles.descContainer}>
                         <Paper style={styles.paper}>
-                            {aboutinfo.map(item => (
+                            {aboutinfo.map((item) => (
                                 <div key={item.title}>
                                     <Typography
                                         style={{
                                             fontSize: 30,
                                             marginBottom: 10,
                                             fontWeight: "bold",
-                                            color: "white"
+                                            color: "white",
                                         }}
                                     >
                                         {item.title}
@@ -47,7 +47,7 @@ export class Home extends Component {
                                             fontSize: 16,
                                             marginBottom: 10,
 
-                                            color: "white"
+                                            color: "white",
                                         }}
                                     >
                                         {item.description}
@@ -56,7 +56,7 @@ export class Home extends Component {
                             ))}
 
                             <Href path="/project" name="View Project" />
-                            <Href path="/skill" name="View skill" />
+                            <Href path="/techstack" name="View My Tech Stack" />
                             <Href path="/resume" name="View Resume" />
                         </Paper>
                     </Grid>
@@ -79,27 +79,27 @@ const styles = {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundSize: "cover",
-        backgroundAttachment: "fixed"
+        backgroundAttachment: "fixed",
     },
 
     avatarContainer: {
         justifyContent: "center",
-        marginTop: 60
+        marginTop: 60,
     },
     avatar: {
         height: 150,
         width: 150,
-        alignItem: "center"
+        alignItem: "center",
     },
     descContainer: {
         justifyContent: "center",
-        marginTop: 80
+        marginTop: 80,
     },
     paper: {
         backgroundColor: "transparent",
         width: 700,
         height: 400,
-        margin: 15
+        margin: 15,
     },
     descText: {
         fontFamily: "Times New Roman",
@@ -108,12 +108,12 @@ const styles = {
         fontSize: 30,
         textAlign: "center",
 
-        marginTop: 10
+        marginTop: 10,
     },
     resumeButton: {
         backgroundColor: "#2398AB",
-        marginTop: 20
+        marginTop: 20,
     },
-    link: { textDecoration: "none", color: "white" }
+    link: { textDecoration: "none", color: "white" },
 };
 export default Home;

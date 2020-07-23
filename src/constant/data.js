@@ -1,7 +1,8 @@
 import bakery from "../static/baked-berry-cake-1055272.jpg";
-import pot from "../static/pot.jpg";
-import job from "../static/job.svg";
-import cake from "../static/cake.svg";
+import amenu from "../static/amenu.png";
+import dev from "../static/dev.png";
+import rene from "../static/rene.png";
+import mdain from "../static/mdain.png";
 export const tech = [
     {
         title: "javascript",
@@ -52,13 +53,21 @@ export const education = [
 
 export const project = [
     {
+        title: "Mdain Solutions",
+        description: "E-commerce site for Mdain Solutions ",
+        link: "https://github.com/achifred/mdain",
+        site: "https://mdainsolutions.com/",
+
+        picture: mdain,
+    },
+    {
         title: "Achif Dev Jobs",
         description: "A job board for developers ",
         link:
             "https://github.com/achifred/remotejob and https://github.com/achifred/remotejobclient",
         site: "https://achifjobs.netlify.com/",
 
-        picture: job,
+        picture: dev,
     },
     {
         title: "Rene Cakes",
@@ -66,7 +75,7 @@ export const project = [
         link: "https://github.com/achifred/renecakes",
         site: "https://renecakes.herokuapp.com/",
 
-        picture: cake,
+        picture: rene,
     },
 
     {
@@ -75,7 +84,7 @@ export const project = [
             "Website for Amenuveve Ceramics. Manufacturers of quality ceramic pots",
 
         site: "https://amenuveveceramics.com/",
-        picture: pot,
+        picture: amenu,
     },
     {
         title: "Sample Html Landing Page",
@@ -88,17 +97,39 @@ export const project = [
 
 export const skills = [
     {
-        title: "Front-end Development",
-        techstack: "JavaScript, React.js ,  HTML5, CSS3 ",
+        techstack: "Php * Laravel",
     },
     {
-        title: "Backend Development",
-        techstack: " NodeJs, Expressjs, Php, Laravel, SQL, MySQL, PostgreSQL",
+        techstack: "JavaScript * NodeJs * Express",
+    },
+    {
+        techstack: "JavaScript * React.js",
+    },
+    {
+        techstack: " HTML5, CSS3",
     },
 
     {
-        title: "CMS",
+        techstack: "SQL",
+    },
+
+    {
         techstack: "Wordpress",
+    },
+];
+
+export const databases = [
+    {
+        techstack: "MySQL",
+    },
+    {
+        techstack: "PostgreSQL",
+    },
+];
+
+export const apistack = [
+    {
+        techstack: "REST",
     },
 ];
 

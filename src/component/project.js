@@ -36,7 +36,7 @@ class Project extends Component {
                                         </Typography>
 
                                         <Typography style={styles.txt}>
-                                            <a href={item.site}> View </a>
+                                            <a href={item.site}> Let me see </a>
                                         </Typography>
                                     </Grid>
                                 </div>

@@ -16,6 +16,38 @@ class Work extends Component {
                     <Grid container style={styles.workContainer}>
                         <Paper style={styles.paper}>
                             <Typography style={styles.headings}>
+                                Work Experience
+                            </Typography>
+                            {workexp.map((item) => (
+                                <div key={item.date}>
+                                    <Typography
+                                        style={{ fontSize: 25, margin: 15 }}
+                                    >
+                                        {item.company}
+                                    </Typography>
+                                    <Typography style={styles.roles}>
+                                        {item.role} {item.date}
+                                    </Typography>
+
+                                    <div>
+                                        {item.project.map((item) => (
+                                            <div key={item.role}>
+                                                <Typography
+                                                    style={{
+                                                        marginBottom: 20,
+                                                        textAlign: "center",
+                                                        margin: 5,
+                                                    }}
+                                                >
+                                                    * {item.role}
+                                                </Typography>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            ))}
+                            <Divider />
+                            <Typography style={styles.headings}>
                                 Education
                             </Typography>
                             {education.map((item) => (
@@ -31,34 +63,6 @@ class Work extends Component {
                                     <Typography style={styles.ContentText}>
                                         {item.description}
                                     </Typography>
-                                </div>
-                            ))}
-
-                            <Divider />
-
-                            <Typography style={styles.headings}>
-                                Work Experience
-                            </Typography>
-                            {workexp.map((item) => (
-                                <div key={item.date}>
-                                    <Typography
-                                        style={{ fontSize: 25, margin: 15 }}
-                                    >
-                                        {item.company}
-                                    </Typography>
-                                    <Typography style={styles.roles}>
-                                        {item.role} {item.date}
-                                    </Typography>
-
-                                    {/* <div>
-                    {item.project.map(item => (
-                      <div key={item.role}>
-                        <Typography style={{ marginBottom: 20 }}>
-                          {item.role}
-                        </Typography>
-                      </div>
-                    ))}
-                  </div>*/}
                                 </div>
                             ))}
                         </Paper>

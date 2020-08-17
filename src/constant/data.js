@@ -40,7 +40,7 @@ export const about = [
         title: "Hi my name is Fred Achi.",
         slug: "I build things for the web.",
         description:
-            " I am web Developer based in Ghana. I develop websites, web applications. I believe nothing is impossible to achieve if you put in your all. ",
+            " I am Software Developer based in Ghana with years of experience in building web applications in domains such e-commerce, consumer services. I believe nothing is impossible to achieve if you put in your all. ",
     },
 ];
 export const education = [
@@ -61,6 +61,14 @@ export const project = [
         picture: mdain,
     },
     {
+        title: "Amenuveve Ceramics",
+        description:
+            "Website for Amenuveve Ceramics. Manufacturers of quality ceramic pots",
+
+        site: "https://amenuveveceramics.com/",
+        picture: amenu,
+    },
+    {
         title: "Achif Dev Jobs",
         description: "A job board for developers ",
         link:
@@ -78,14 +86,6 @@ export const project = [
         picture: rene,
     },
 
-    {
-        title: "Amenuveve Ceramics",
-        description:
-            "Website for Amenuveve Ceramics. Manufacturers of quality ceramic pots",
-
-        site: "https://amenuveveceramics.com/",
-        picture: amenu,
-    },
     {
         title: "Sample Html Landing Page",
         description: " A landing page built with HTML5 & CSS3 ",
@@ -107,6 +107,9 @@ export const skills = [
     },
     {
         techstack: " HTML5, CSS3",
+    },
+    {
+        techstack: " Git",
     },
 
     {
@@ -136,42 +139,38 @@ export const apistack = [
 export const workexp = [
     {
         company: "Origgin Ltd, Accra",
-        role: "Web Application Developer",
-        date: " Febuary 2020 - Present",
+        role: "Software Developer",
+        date: " Febuary 2020 - August 2020",
         project: [
             {
                 role:
-                    "Develop an advertisement website for advertising center courses using PHP",
-            },
-            {
-                role:
-                    "Developed the frontend for a ledger system. An application to manage center's financial transactions.",
+                    "Delivered improvement to a back-end api service responsible for selling electricity power online.",
             },
         ],
     },
     {
-        company: "Kofi Annan Center of Excellence in ICT, Accra",
-        role: "Web Application Developer",
+        company: "Kofi Annan Center of Excellence in ICT(AITI-KACE), Accra",
+        role: "Software Developer",
         date: " september 2018 - August 2019",
         project: [
             {
                 role:
-                    "Develop an advertisement website for advertising center courses using PHP",
+                    "Delivered as a teaching assistant. Responsible for assisting in teaching students software development.",
             },
             {
                 role:
-                    "Developed the frontend for a ledger system. An application to manage center's financial transactions.",
+                    "Contributed in the development of the front-end of a ledger system. A system responsible for managing the center's financial transactions.",
             },
         ],
     },
     {
         company: "Appatech Research Ghana",
-        role: "Web and Mobile Application Developer(intern)",
+        role: "Software Developer(intern)",
         date: " June 2017- August 2017",
         project: [
             {
                 role:
-                    "Design and develop a mobile application version of an existing Enterprise Resource Planning ",
+                    "Contributed to the upgrade of a micro-finance banking system. System was designed for loan request, employee management, customer management.",
             },
         ],
     },
@@ -184,5 +183,6 @@ export const contact = [
         country: "Accra, Ghana",
         email: "achifred123@gmail.com",
         Phone: "+233548480707",
+        language: "English",
     },
 ];

@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import About from "./about";
 import Work from "./work";
 
-import { Button } from "@material-ui/core";
-
 class Resume extends Component {
     state = {
         step: 1,

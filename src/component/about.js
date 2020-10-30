@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Typography, Button, Grid, Paper, Divider } from "@material-ui/core";
+import { Divider } from "@material-ui/core";
 import { about, contact } from "../constant/data";
 
 class About extends Component {
@@ -8,104 +8,59 @@ class About extends Component {
         contact,
     };
     render() {
-        const { next, back, Container } = this.props;
+        const { next, back } = this.props;
         const { about, contact } = this.state;
         return (
-            <div style={Container}>
-                <Grid container style={styles.aboutContainer}>
-                    <Grid container style={{ justifyContent: "center" }}>
-                        <Paper style={styles.abtPaper}>
-                            <Typography
-                                style={{
-                                    margin: 15,
-                                    fontSize: 20,
-                                    color: "#2398AB",
-                                }}
-                            >
+            <div className="bg-gray-900 h-screen">
+                <div className="block justify-center pt-10">
+                    <div className="flex justify-center">
+                        <div className="w-10/12 lg:w-1/2 rounded-lg justify-center bg-gray-200 text-center px-4 py-2">
+                            <h2 className="font-bold text-xl text-gray-900 px-4 py-2">
                                 About me
-                            </Typography>
+                            </h2>
                             {about.map((item) => (
                                 <div key={item.title}>
-                                    <Typography style={styles.aboutText}>
+                                    <h5 className="font-bold text-gray-700 px-4 py-2 text-lg">
                                         {item.description}
-                                    </Typography>
+                                    </h5>
                                 </div>
                             ))}
                             <Divider />
-                            <Typography
-                                style={{
-                                    margin: 15,
-                                    fontSize: 20,
-                                    color: "#2398AB",
-                                }}
-                            >
+                            <h1 className="font-bold text-xl text-gray-900 px-4 py-2">
                                 Contact Details
-                            </Typography>
+                            </h1>
                             {contact.map((item) => (
                                 <div key={item.Phone}>
-                                    <Typography style={styles.contactText}>
+                                    <h5 className="font-bold text-gray-700 px-4 py-2">
                                         Name: {item.name}
-                                    </Typography>
+                                    </h5>
 
-                                    <Typography style={styles.contactText}>
+                                    <h5 className="font-bold text-gray-700 px-4 py-2">
                                         Phone: {item.Phone}
-                                    </Typography>
-                                    <Typography style={styles.contactText}>
+                                    </h5>
+                                    <h5 className="font-bold text-gray-700 px-4 py-2">
                                         Email: {item.email}
-                                    </Typography>
-                                    <Typography style={styles.contactText}>
+                                    </h5>
+                                    <h5 className="font-bold text-gray-700 px-4 py-2">
                                         Language: {item.language}
-                                    </Typography>
+                                    </h5>
                                 </div>
                             ))}
-                        </Paper>
-                    </Grid>
-                    {back}
-                    <Button
-                        onClick={next}
-                        variant="contained"
-                        style={styles.btn}
-                    >
-                        Work & Education
-                    </Button>
-                </Grid>
+                        </div>
+                    </div>
+                    <div className=" flex justify-center">
+                        {back}
+                        <button
+                            onClick={next}
+                            className="bg-transparent shadow-lg z-10 border-b border-green-900 text-white"
+                        >
+                            Work & Education
+                        </button>
+                    </div>
+                </div>
             </div>
         );
     }
 }
-const styles = {
-    /*Container:{
-    flex:1,
-    background: 'linear-gradient(to right bottom, #126F6F , #7AD9D9    )',
-    //backgroundColor:'#D1D8D9',
-    height:'100vh'
 
-  },*/
-    aboutContainer: {
-        justifyContent: "center",
-    },
-    abtPaper: {
-        width: 700,
-        textAlign: "center",
-        margin: 18,
-    },
-    aboutText: {
-        margin: 20,
-        fontFamily: "Times New Roman",
-        fontSize: 20,
-    },
-
-    contactText: {
-        marginLeft: 20,
-        marginTop: 12,
-        marginBottom: 15,
-        fontFamily: "Times New Roman",
-        fontSize: 20,
-    },
-    btn: {
-        //marginRight:20,
-        backgroundColor: "transparent",
-        color: "black",
-    },
-};
 export default About;

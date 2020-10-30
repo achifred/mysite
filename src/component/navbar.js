@@ -23,7 +23,7 @@ export function Navbar() {
 
     return (
         <div className={classes.root}>
-            <AppBar style={{ backgroundColor: "#2398AB" }} position="static">
+            <nav className="bg-gray-900">
                 <Toolbar>
                     <Typography variant="h6" className={classes.title}>
                         <Link style={{ color: "white" }} to="/">
@@ -54,7 +54,7 @@ export function Navbar() {
                         Tech Stack
                     </Link>
                 </Toolbar>
-            </AppBar>
+            </nav>
         </div>
     );
 }

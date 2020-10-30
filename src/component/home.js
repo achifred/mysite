@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { tech, about } from "../constant/data";
-import { Typography, Grid, Paper } from "@material-ui/core";
-import backgroundpic from "../static/htmlcss.svg";
+import { Grid } from "@material-ui/core";
 
 import Footer from "./footer";
 import { Href } from "./href";
@@ -19,101 +18,40 @@ export class Home extends Component {
     render() {
         const { aboutinfo } = this.state;
         return (
-            <Grid container style={styles.homeContainer}>
-                <Grid container style={styles.contentContainer}>
-                    <Grid container style={styles.descContainer}>
-                        <Paper style={styles.paper}>
-                            {aboutinfo.map((item) => (
-                                <div key={item.title}>
-                                    <Typography
-                                        style={{
-                                            fontSize: 30,
-                                            marginBottom: 10,
-                                            fontWeight: "bold",
-                                            color: "white",
-                                        }}
-                                    >
-                                        {item.title}
-                                    </Typography>
-                                    <Typography
-                                        key={item}
-                                        style={styles.descText}
-                                    >
-                                        {item.slug}
-                                    </Typography>
+            <Grid
+                container
+                className="bg-gray-900 h-screen flex justify-center text-center"
+            >
+                <div className="flex justify-center mt-5">
+                    <div className="bg-gray-900 shadow-lg z-10 border-b border-green-900 m-5 w-ful px-4 py-2 lg:w-1/2">
+                        {aboutinfo.map((item) => (
+                            <div key={item.title}>
+                                <h2 className="font-bold text-white mb-5 text-3xl">
+                                    {item.title}
+                                </h2>
+                                <h2
+                                    key={item}
+                                    className="font-bold italic text-white text-xl"
+                                >
+                                    {item.slug}
+                                </h2>
 
-                                    <Typography
-                                        style={{
-                                            fontSize: 16,
-                                            marginBottom: 10,
+                                <p className="font-semibold text-white break-words px-4 py-3">
+                                    {item.description}
+                                </p>
+                            </div>
+                        ))}
 
-                                            color: "white",
-                                        }}
-                                    >
-                                        {item.description}
-                                    </Typography>
-                                </div>
-                            ))}
-
-                            <Href path="/project" name="View Project" />
-                            <Href path="/techstack" name="View My Tech Stack" />
-                            <Href path="/resume" name="View Resume" />
-                        </Paper>
-                    </Grid>
-                </Grid>
+                        <Href path="/project" name="View Project" />
+                        <Href path="/techstack" name="View My Tech Stack" />
+                        <Href path="/resume" name="View Resume" />
+                    </div>
+                </div>
 
                 <Footer />
             </Grid>
         );
     }
 }
-const styles = {
-    homeContainer: {
-        flex: 1,
-        justifyContent: "center",
-        textAlign: "center",
-        height: "100vh",
-        width: "100%",
-        background: `linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(${backgroundpic})`,
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundAttachment: "fixed",
-    },
 
-    avatarContainer: {
-        justifyContent: "center",
-        marginTop: 60,
-    },
-    avatar: {
-        height: 150,
-        width: 150,
-        alignItem: "center",
-    },
-    descContainer: {
-        justifyContent: "center",
-        marginTop: 80,
-    },
-    paper: {
-        backgroundColor: "transparent",
-        width: 700,
-        height: 400,
-        margin: 15,
-    },
-    descText: {
-        fontFamily: "Times New Roman",
-        backgroundColor: "transparent",
-        color: "white",
-        fontSize: 30,
-        textAlign: "center",
-
-        marginTop: 10,
-    },
-    resumeButton: {
-        backgroundColor: "#2398AB",
-        marginTop: 20,
-    },
-    link: { textDecoration: "none", color: "white" },
-};
 export default Home;

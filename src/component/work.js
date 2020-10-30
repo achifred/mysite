@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Typography, Button, Grid, Paper, Divider } from "@material-ui/core";
+import { Divider } from "@material-ui/core";
 import { education, workexp } from "../constant/data";
 
 class Work extends Component {
@@ -8,112 +8,69 @@ class Work extends Component {
         workexp,
     };
     render() {
-        const { prev, back, Container } = this.props;
+        const { prev, back } = this.props;
         const { education, workexp } = this.state;
         return (
-            <div style={Container}>
-                <Grid container>
-                    <Grid container style={styles.workContainer}>
-                        <Paper style={styles.paper}>
-                            <Typography style={styles.headings}>
+            <div className="bg-gray-900 h-auto">
+                <div className="block justify-center pt-3">
+                    <div className="flex justify-center">
+                        <div className="w-10/12 lg:w-1/2 rounded-lg justify-center bg-gray-200 text-center px-4 py-2">
+                            <h2 className="font-bold text-xl text-gray-900 px-4 py-2">
                                 Work Experience
-                            </Typography>
+                            </h2>
                             {workexp.map((item) => (
                                 <div key={item.date}>
-                                    <Typography
-                                        style={{ fontSize: 25, margin: 15 }}
-                                    >
+                                    <h5 className="font-bold text-gray-700 text-xl px-4 py-2">
                                         {item.company}
-                                    </Typography>
-                                    <Typography style={styles.roles}>
+                                    </h5>
+                                    <h5 className="font-bold text-gray-700  px-4 py-2">
                                         {item.role} {item.date}
-                                    </Typography>
+                                    </h5>
 
                                     <div>
                                         {item.project.map((item) => (
                                             <div key={item.role}>
-                                                <Typography
-                                                    style={{
-                                                        marginBottom: 20,
-                                                        textAlign: "center",
-                                                        margin: 5,
-                                                    }}
-                                                >
+                                                <p className="mb-5 text-center text-gray-700">
                                                     * {item.role}
-                                                </Typography>
+                                                </p>
                                             </div>
                                         ))}
                                     </div>
                                 </div>
                             ))}
                             <Divider />
-                            <Typography style={styles.headings}>
+                            <h2 className="font-bold text-xl text-gray-900 px-4 py-2">
                                 Education
-                            </Typography>
+                            </h2>
                             {education.map((item) => (
                                 <div key={item.year}>
-                                    <Typography
-                                        style={{ fontSize: 25, margin: 15 }}
-                                    >
+                                    <h5 className="font-bold text-xl text-gray-700">
                                         {item.name}
-                                    </Typography>
-                                    <Typography style={styles.roles}>
+                                    </h5>
+                                    <h5 className="font-bold italic text-gray-700">
                                         {item.programe} {item.year}
-                                    </Typography>
-                                    <Typography style={styles.ContentText}>
+                                    </h5>
+                                    <h5 className="font-bold  text-gray-700">
                                         {item.description}
-                                    </Typography>
+                                    </h5>
                                 </div>
                             ))}
-                        </Paper>
-                    </Grid>
-                </Grid>
-                <Grid container style={{ justifyContent: "center" }}>
+                        </div>
+                    </div>
+                </div>
+
+                <div className=" flex justify-center pb-5">
                     {back}
-                    <Button
-                        style={styles.btn}
-                        variant="contained"
+                    <button
+                        className="bg-transparent shadow-lg z-10 border-b border-green-900 text-white"
                         onClick={prev}
                     >
                         About me
-                    </Button>{" "}
-                </Grid>
+                    </button>
+                </div>
             </div>
         );
     }
 }
-const styles = {
-    paper: {
-        width: 750,
-        margin: 15,
-        textAlign: "center",
-    },
-    workContainer: {
-        justifyContent: "center",
-    },
-    headings: {
-        margin: 15,
-        fontSize: 30,
-        color: "#2398AB",
-    },
-    ContentText: {
-        marginLeft: 15,
-        fontSize: 18,
-        marginBottom: 10,
-        fontFamily: "Times New Roman",
-    },
-    roles: {
-        fontFamily: "San Serif",
-        marginBottom: 20,
-        marginLeft: 15,
-        fontSize: 20,
-        fontStyle: "italic",
-    },
-    btn: {
-        marginRight: 30,
-        backgroundColor: "transparent",
-        color: "black",
-    },
-};
 
 export default Work;

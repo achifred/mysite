@@ -3,6 +3,7 @@ import amenu from "../static/amenu.png";
 import dev from "../static/dev.png";
 import rene from "../static/rene.png";
 import mdain from "../static/mdain.png";
+import twinelink from "../static/twinelink.png"
 export const tech = [
     {
         title: "javascript",
@@ -53,10 +54,18 @@ export const education = [
 
 export const project = [
     {
+        title: "TwineLink",
+        description: "TwineLink is platform that allows to put your contents out there with just a link. ",
+        link: "https://github.com/achifred/twinelink",
+        site: "https://twinelink.com/",
+
+        picture: twinelink,
+    },
+    {
         title: "Mdain Solutions",
         description: "E-commerce site for Mdain Solutions ",
         link: "https://github.com/achifred/mdain",
-        site: "https://mdainsolutions.com/",
+        site: "https://mdainsolutions.com/store",
 
         picture: mdain,
     },
@@ -129,6 +138,14 @@ export const databases = [
         techstack: "PostgreSQL",
     },
 ];
+export const infrastructure = [
+    {
+        techstack: "DigitalOcean",
+    },
+    {
+        techstack: "Heroku",
+    },
+];
 
 export const apistack = [
     {
@@ -182,7 +199,7 @@ export const contact = [
 
         country: "Accra, Ghana",
         email: "achifred123@gmail.com",
-        Phone: "+233548480707",
+        Phone: "+233 548480707",
         language: "English",
     },
 ];

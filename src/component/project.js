@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { project } from "../constant/data";
-import { Grid, Typography, Paper, Container } from "@material-ui/core";
+
 class Project extends Component {
     constructor(props) {
         super(props);
@@ -12,63 +12,53 @@ class Project extends Component {
         const { works } = this.state;
         const { back } = this.props;
         return (
-            <Container>
-                <div style={styles.root}>
-                    <Grid container style={styles.grid}>
+            <div className="container mx-auto">
+                
+                    <div className="container mx-auto flex flex-wrap">
                         {works.map((item) => (
-                            <Paper
-                                style={{ width: 400, margin: 20 }}
+                            <div
+                            className=" w-full lg:w-2/5 m-10 shadow-md rounded-lg hover:shadow-2xl"
+                                
                                 key={item.title}
                             >
                                 <div>
-                                    <Grid style={{ justifyContent: "center" }}>
+                                    
                                         <img
                                             src={item.picture}
                                             alt=""
-                                            style={styles.img}
+                                            className="w-full h-56"
+                                            
                                         />
 
-                                        <Typography style={styles.txt}>
+                                        <p className="text-center font-bold text-gray-800">
                                             {item.title}
-                                        </Typography>
-                                        <Typography style={styles.txt}>
+                                        </p>
+                                        <p className="text-center font-bold text-gray-600 px-2 py-1">
                                             {item.description}
-                                        </Typography>
+                                        </p>
 
-                                        <Typography style={styles.txt}>
-                                            <a href={item.site}> Let me see </a>
-                                        </Typography>
-                                    </Grid>
+                                        
+                                            <div className="flex justify-center">
+                                            <a href={item.site} className="text-center mb-3 pt-3 font-bold text-gray-100 px-4 py-2  rounded-full bg-green-600 hover:bg-gray-800"> Let me see </a>
+                                            </div>
+                                    
+                                        
+                                
                                 </div>
-                            </Paper>
+                            </div>
                         ))}
-                    </Grid>
-                    <Grid
-                        container
-                        style={{
-                            justifyContent: "center",
-                            marginTop: 30,
-                            alignContent: "space-between",
-                        }}
+                    </div>
+                    <div
+                    className=" flex justify-center"
+                       
                     >
                         {back}
-                    </Grid>
-                </div>
-            </Container>
+                    </div>
+                
+            </div>
         );
     }
 }
-const styles = {
-    grid: {
-        justifyContent: "center",
-    },
-    txt: {
-        textAlign: "center",
-    },
-    img: {
-        height: 200,
-        width: "100%",
-    },
-};
+
 
 export default Project;

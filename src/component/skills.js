@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { Typography, Grid, Paper } from "@material-ui/core";
-import { skills, databases, apistack } from "../constant/data";
+import { Grid, } from "@material-ui/core";
+import { skills, databases, apistack,infrastructure } from "../constant/data";
 
 class Skills extends Component {
     state = {
@@ -15,89 +15,70 @@ class Skills extends Component {
             <div style={Container}>
                 <Grid container>
                     <Grid container style={{ justifyContent: "center" }}>
-                        <Paper
-                            style={{
-                                width: 700,
-                                height: "100vh",
-                                margin: 15,
-                                textAlign: "center",
-                            }}
+                        <div
+                        className="w-3/4 min-h-screen  text-center hover:shadow-2xl rounded-lg"
+                            
                         >
-                            <Typography
-                                style={{
-                                    textAlign: "center",
-                                    fontSize: 30,
-                                    marginTop: 30,
-                                }}
+                            <h3
+                            className="text-center font-extrabold pt-10 text-3xl text-gray-700"
+                               
                             >
                                 Tech Stacks
-                            </Typography>
+                            </h3>
                             {skills.map((item) => (
-                                <div key={item}>
-                                    <Typography
-                                        style={{
-                                            margin: 5,
-                                            fontSize: 20,
-                                            fontFamily: "Times New Roman",
-                                            textAlign: "center",
-                                            fontStyle: "italic",
-                                        }}
+                                <div key={item.techstack}>
+                                    <p
+                                    className="text-center italic text-lg  font-bold text-gray-600"
+                                        
                                     >
                                         {item.techstack}
-                                    </Typography>
+                                    </p>
                                 </div>
                             ))}
 
-                            <Typography
-                                style={{
-                                    textAlign: "center",
-                                    fontSize: 30,
-                                    marginTop: 30,
-                                }}
+                            <h3
+                               className="text-center font-extrabold pt-10 text-3xl text-gray-700"
                             >
                                 Databases
-                            </Typography>
+                            </h3>
                             {databases.map((item) => (
-                                <div key={item}>
-                                    <Typography
-                                        style={{
-                                            margin: 5,
-                                            fontSize: 20,
-                                            fontFamily: "Times New Roman",
-                                            textAlign: "center",
-                                            fontStyle: "italic",
-                                        }}
+                                <div key={item.techstack}>
+                                    <p
+                                        className="text-center italic text-lg  font-bold text-gray-600"
                                     >
                                         {item.techstack}
-                                    </Typography>
+                                    </p>
                                 </div>
                             ))}
-
-                            <Typography
-                                style={{
-                                    textAlign: "center",
-                                    fontSize: 30,
-                                    marginTop: 30,
-                                }}
+                            <h3
+                                className="text-center font-extrabold pt-10 text-3xl text-gray-700"
+                            >
+                                Infrastructure
+                            </h3>
+                            {infrastructure.map((item) => (
+                                <div key={item.techstack}>
+                                    <p
+                                       className="text-center italic text-lg  font-bold text-gray-600"
+                                    >
+                                        {item.techstack}
+                                    </p>
+                                </div>
+                            ))}
+                            <h3
+                                className="text-center font-extrabold pt-10 text-3xl text-gray-700"
                             >
                                 API Specs
-                            </Typography>
+                            </h3>
                             {apistack.map((item) => (
-                                <div key={item}>
-                                    <Typography
-                                        style={{
-                                            margin: 5,
-                                            fontSize: 20,
-                                            fontFamily: "Times New Roman",
-                                            textAlign: "center",
-                                            fontStyle: "italic",
-                                        }}
+                                <div key={item.techstack}>
+                                    <p
+                                       className="text-center italic text-lg  font-bold text-gray-600"
                                     >
                                         {item.techstack}
-                                    </Typography>
+                                    </p>
                                 </div>
                             ))}
-                        </Paper>
+                        </div>
                     </Grid>
                 </Grid>
             </div>
